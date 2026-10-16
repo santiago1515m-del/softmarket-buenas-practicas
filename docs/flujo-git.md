@@ -15,6 +15,6 @@
 - `feature/1-gestion-clientes`: trabajo de gestión de clientes.
 - `fix/2-guia-revision`: corrección de la guía de revisión.
 
-La revisión debe hacerla otra persona; quien propone el cambio no lo aprueba por su cuenta.
+La revisión debe hacerla otra persona; quien propone el cambio no lo aprueba por su cuenta. Las observaciones deben explicar qué corregir y cómo comprobar que quedó resuelto.
 
 Repositorio: https://github.com/santiago1515m-del/softmarket-buenas-practicas
