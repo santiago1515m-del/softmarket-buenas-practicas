@@ -1,25 +1,28 @@
 # SoftMarket: propuesta de buenas prácticas
 
-Repositorio académico para acompañar el informe de refactorización de SoftMarket. Contiene una implementación sencilla del registro de clientes, una prueba unitaria de ejemplo y el informe en PDF y formato editable.
+Repositorio académico con el informe y un ejemplo de gestión de clientes. Incluye código fuente, pruebas y el flujo de trabajo propuesto.
 
-## Estructura
+## Contenido
 
 - `docs/Informe_SoftMarket.pdf`: informe final.
-- `docs/Informe_SoftMarket_editable.docx`: editable en Word o importable en Google Docs.
-- `docs/flujo-git.md`: pasos del flujo de ramas y revisión.
-- `src/clientes/registro.py`: ejemplo SOLID de gestión de clientes.
-- `tests/test_registro.py`: ejemplo de prueba unitaria.
+- `docs/Informe_SoftMarket_editable.docx`: versión editable del informe.
+- `docs/flujo-git.md`: pasos para trabajar con ramas y revisar cambios.
+- `src/clientes/registro.py`: ejemplo de registro de clientes con principios SOLID.
+- `tests/test_registro.py`: pruebas del registro.
+- `.github/PULL_REQUEST_TEMPLATE.md`: plantilla para describir y revisar cambios.
 
-## Ejecutar el ejemplo
+## Ejecutar las pruebas
 
-Requiere Python 3.10 o posterior. Desde la raíz del repositorio:
+Requiere Python 3.10 o posterior. Desde la carpeta principal:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-## Flujo ilustrado
+## Ramas de ejemplo
 
-`main` es la rama estable. La funcionalidad se trabaja en `feature/1-gestion-clientes`, se revisa mediante pull request y se integra a `main`. La rama `fix/2-guia-revision` muestra un cambio correctivo separado.
+- `main`: versión estable del proyecto.
+- `feature/1-gestion-clientes`: trabajo de gestión de clientes.
+- `fix/2-guia-revision`: corrección de la guía de revisión.
 
-Este repositorio local es una simulación académica. Para publicarlo, crea un repositorio vacío en GitHub y sigue las instrucciones de `docs/flujo-git.md`.
+Repositorio público: [softmarket-buenas-practicas](https://github.com/santiago1515m-del/softmarket-buenas-practicas)
