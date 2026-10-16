@@ -31,6 +31,10 @@ class RegistrarClienteTests(unittest.TestCase):
         with self.assertRaises(ErrorValidacion):
             self.servicio.ejecutar(" ", "santiago@example.com")
 
+    def test_rechaza_correo_invalido(self):
+        with self.assertRaises(ErrorValidacion):
+            self.servicio.ejecutar("Santiago", "@example.com")
+
     def test_rechaza_correo_duplicado(self):
         self.servicio.ejecutar("Santiago", "santiago@example.com")
         with self.assertRaises(CorreoDuplicado):
