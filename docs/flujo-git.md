@@ -20,3 +20,5 @@ git push -u origin fix/2-guia-revision
 ```
 
 Reemplaza `TU_USUARIO` por tu usuario. En GitHub, abre un pull request desde `feature/1-gestion-clientes` hacia `main` para mostrar la revisión.
+
+La revisión debe ser realizada por otra persona; el autor de la propuesta no aprueba su propio cambio.
