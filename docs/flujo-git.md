@@ -1,22 +1,20 @@
 # Flujo de Git propuesto
 
-1. Abrir una tarea en GitHub Issues.
-2. Actualizar `main` y crear una rama breve: `git switch -c feature/1-gestion-clientes`.
-3. Hacer un cambio pequeño, guardar el trabajo y subir la rama.
-4. Abrir un pull request hacia `main`, explicar el cambio y pedir una revisión.
-5. Revisar el código y las verificaciones automáticas; corregir lo que falle.
-6. Integrar con **Squash and merge** y borrar la rama cuando se apruebe.
-7. Para publicar, crear una etiqueta de versión y desplegar después de verificar el cambio.
+1. Abrir una tarea y acordar qué cambio se necesita.
+2. Actualizar `main` y crear una rama para trabajar, por ejemplo: `git switch -c feature/1-gestion-clientes`.
+3. Hacer un cambio pequeño, ejecutar las pruebas y guardarlo con un mensaje claro, como `feat(clientes): agregar registro` o `fix(clientes): validar correo`.
+4. Subir la rama a GitHub con `git push -u origin feature/1-gestion-clientes`.
+5. Abrir un pull request dirigido a `main`, explicar el cambio y pedir una revisión.
+6. Otra persona revisa el cambio y confirma que las pruebas pasen. Si hay observaciones, corregirlas en la misma rama y solicitar otra revisión.
+7. Si aparece un conflicto con `main`, actualizar la rama, resolver las diferencias y ejecutar otra vez las pruebas.
+8. Integrar el cambio aprobado con **Squash and merge** y cerrar la rama.
 
-## Publicar este repositorio en GitHub
+## Ramas de ejemplo
 
-Primero crea en GitHub un repositorio vacío llamado `softmarket-buenas-practicas`. Desde la carpeta local del proyecto, usa:
+- `main`: versión estable del proyecto.
+- `feature/1-gestion-clientes`: trabajo de gestión de clientes.
+- `fix/2-guia-revision`: corrección de la guía de revisión.
 
-```bash
-git remote add origin https://github.com/TU_USUARIO/softmarket-buenas-practicas.git
-git push -u origin main
-git push -u origin feature/1-gestion-clientes
-git push -u origin fix/2-guia-revision
-```
+La revisión debe hacerla otra persona; quien propone el cambio no lo aprueba por su cuenta.
 
-Reemplaza `TU_USUARIO` por tu usuario. En GitHub, abre un pull request desde `feature/1-gestion-clientes` hacia `main` para mostrar la revisión.
+Repositorio: https://github.com/santiago1515m-del/softmarket-buenas-practicas
